@@ -1,0 +1,249 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Heart Rate Detector</title>
+
+<!--
+
+Breezed Template
+
+https://templatemo.com/tm-543-breezed
+
+-->
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/font-awesome.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-breezed.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/owl-carousel.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/lightbox.css' %}">
+
+    </head>
+
+    <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            Mj
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="http://127.0.0.1:8000/" class="active">refresh</a></li>
+                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#contact-us">Contact Us</a></li>
+<!--                            <div class="search-icon">-->
+<!--                                <a href="#search"><i class="fa fa-search"></i></a>-->
+<!--                            </div>-->
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Search Area ***** -->
+
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner header-text" id="top">
+        <div class="Modern-Slider">
+          <!-- Item -->
+          <div class="item">
+            <div class="img-fill">
+                <img src="{% static 'assets/images/slide-01.jpg' %}" alt="">
+                <div class="text-content">
+                  <h3>Welcome To Heart Rate Detector</h3>
+                  <h5>Your Hear rate (Bpm):</h5>
+                  <h2>{{heartrate}}</h2>
+
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+          <!-- Item -->
+<!--          <div class="item">-->
+<!--            <div class="img-fill">-->
+<!--                <img src="{% static 'assets/images/slide-02.jpg' %}" alt="">-->
+<!--                <div class="text-content">-->
+<!--                  <h3>Integrated Marketing Media</h3>-->
+<!--                  <h5>Best Digital Marketing</h5>-->
+<!--                  <a href="#" class="main-stroked-button">Read More</a>-->
+<!--                  <a href="#" class="main-filled-button">Take Action</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--          </div>-->
+          <!-- // Item -->
+          <!-- Item -->
+<!--          <div class="item">-->
+<!--            <div class="img-fill">-->
+<!--                <img src="{% static 'assets/images/slide-03.jpg' %}" alt="">-->
+<!--                <div class="text-content">-->
+<!--                  <h3>High Performance</h3>-->
+<!--                  <h5>Robust and Speedy</h5>-->
+<!--                  <a href="#" class="main-stroked-button">Learn More</a>-->
+<!--                  <a href="#" class="main-filled-button">Get It Now</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--          </div>-->
+          <!-- // Item -->
+        </div>
+    </div>
+    <div class="scroll-down scroll-to-section"><a href="#testimonal"><i class="fa fa-arrow-down"></i></a></div>
+
+    <!-- ***** Testimonials Starts ***** -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h6>Result</h6>
+                        <h2>Forehead detector and Heart Rate estimator</h2>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="item author-item">
+                        <div class="member-thumb">
+                            <img src="{{plot}}" alt="" width="700" height="500">
+                        </div>
+                        <h4>Heart Rate Variablity Chart</h4>
+                    </div>
+                    <div class="item author-item">
+                        <div class="member-thumb">
+                            <video controls width ="720"><source src="{{video}}" type="video/mp4"></video>
+                        <h4>Resultant Video</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Testimonials Ends ***** -->
+
+    <!-- ***** Contact Us Area Starts ***** -->
+    <section class="section" id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="left-text-content">
+                        <div class="section-heading">
+                            <h6>Contact Us</h6>
+                            <h2>keep in touch with</h2>
+                        </div>
+                        <ul class="contact-info">
+                            <li><img src="{% static 'assets/images/contact-info-01.png' %}" alt="">975-4181-519</li>
+                            <li><img src="{% static 'assets/images/contact-info-02.png' %}" alt="">manas2jay@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Contact Us Area Ends ***** -->
+
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xs-12">
+                    <div class="left-text-content">
+                        <p>Manas Jain
+
+
+                         <a rel="nofollow noopener" href=""></a></p>
+                        <p>3rd year undergraduate in Computer Science
+
+
+                         <a rel="nofollow noopener" href=""></a></p>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xs-12">
+                    <div class="right-text-content">
+                            <ul class="social-icons">
+                                <li><p>Follow Us</p></li>
+                                <li><a rel="nofollow" href="https://github.com/manas2jay"><i class="fa fa-github"></i></a></li>
+
+                                <li><a rel="nofollow" href="https://www.linkedin.com/in/manas-jain-5a6363200/"><i class="fa fa-linkedin"></i></a></li>
+
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="{% static 'assets/js/jquery-2.1.0.min.js' %}"></script>
+
+    <!-- Bootstrap -->
+    <script src="{% static 'assets/js/popper.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+
+    <!-- Plugins -->
+    <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+    <script src="{% static 'assets/js/scrollreveal.min.js' %}"></script>
+    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'assets/js/imgfix.min.js' %}"></script>
+    <script src="{% static 'assets/js/slick.js' %}"></script>
+    <script src="{% static 'assets/js/lightbox.js' %}"></script>
+    <script src="{% static 'assets/js/isotope.js' %}"></script>
+
+    <!-- Global Init -->
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+
+    <script>
+
+        $(function() {
+            var selectedClass = "";
+            $("p").click(function(){
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("."+selectedClass).fadeOut();
+            setTimeout(function() {
+              $("."+selectedClass).fadeIn();
+              $("#portfolio").fadeTo(50, 1);
+            }, 500);
+
+            });
+        });
+
+    </script>
+
+  </body>
+</html>
